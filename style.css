@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
 
-body{
+body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -11,36 +10,41 @@ body{
 .container {
     margin: 50px auto;
     width: 1321px;
-    background: #161616; 
+    background: #161616;
     border-radius: 20px;
-  }
- .banner {
+}
+
+.banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 100px 0;
     gap: 24px;
-  }  
+}
 
 .banner__text {
     color: #fff;
     width: 100%;
 }
+
 .text {
     display: flex;
     flex-wrap: wrap;
 }
+
 .banner__title h1 {
     letter-spacing: 5px;
     font-size: 70px;
     font-weight: 700;
     line-height: 69px;
 }
+
 .banner__title p {
     font-weight: 400;
     font-size: 16px;
     margin: 0 0 30px;
 }
-  .watch__button {
+
+.watch__button {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -51,20 +55,22 @@ body{
     border-radius: 5px;
     border: none;
 }
- .banner__image img {
+
+.banner__image img {
     width: 100%;
- }
- 
+}
 
 
- 
- .container__1{
-     margin: 50px auto;
-     width: 1321px;
-     border-radius: 20px;
-     display: flex;
- }
- .media {
+
+
+.container__1 {
+    margin: 50px auto;
+    width: 1321px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.media {
     display: flex;
     gap: 30px;
 }
@@ -79,7 +85,9 @@ body{
     display: flex;
     align-items: center;
 }
+
 .fined__area {
+
     display: flex;
     flex-direction: column;
     margin: 0 28px;
@@ -98,40 +106,78 @@ body{
     justify-content: center;
     color: #000;
 }
- .fined__area .button:hover{
+
+.fined__area .button:hover {
     background-color: #DD0000;
     color: #fff;
- }
+}
 
 
 
- .grow__width{
+.grow__width {
     flex-grow: 1;
- }
- .content{
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 20px;
- }
- .blog{
-     display: flex;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog {
+    display: flex;
     flex-direction: column;
- }
- .blog-banner img{
+}
+
+.blog-banner img {
     width: 100%;
- }
- .blog__title{
+}
+
+.blog__title {
     display: flex;
 }
- .blog-info {
+
+.blog-info {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
- .course-duration{
-     border-radius: 14.6913px;
-     padding: 5px 10px;
- }
+
+.course-duration {
+    border-radius: 14.6913px;
+    padding: 5px 10px;
+}
+
+
+
+footer {
+    background-color: #000;
+
+}
+
+.footer__section {
+    text-align: center;
+    padding: 50px 0;
+} 
+
+.heading h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+footer hr {
+    width: 80%;
+}
+.footer__menu{
+    width: 60%;
+    margin: 0 auto;
+}
+.footer__menu a {
+    text-decoration: none;
+    color: lightgray;
+    margin-left: 10px;
+   
+}
 
 
 
@@ -139,40 +185,70 @@ body{
 
 
 
- @media (max-width:992px){
-    .hidden{
+
+@media screen and (max-width:992px) {
+    .container {
+        min-width: 734px;
+    }
+
+    .media {
+        display: block;
+    }
+
+    .fixed__width {}
+
+    .fined__area {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fined__area .button {}
+
+    .hidden {
         display: none;
     }
+
     .content {
         grid-template-columns: repeat(2, 1fr);
     }
-   
+
 }
-@media (max-width:668px){
-  .banner{
+
+@media screen and (max-width:668px) {
+    .banner {
         grid-template-columns: repeat(1, 1fr);
     }
-    .text{
+
+    .text {
         justify-content: center;
     }
+
     .banner__text {
         text-align: center;
         padding: 0 0 50px;
     }
-    .banner__text p{
+
+    .banner__text p {
         font-size: 40px;
 
     }
+
     .banner__text h1 {
         font-size: 93px;
         line-height: normal;
         margin-bottom: 50px;
     }
-    .banner__button{
+
+    .banner__button {
         margin-top: 20px;
     }
+
     .banner__button {
         margin-top: 70px;
     }
- 
+/* footer-area */
+   .footer__menu{
+    display: block;
+   }
+
 }
