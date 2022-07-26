@@ -164,6 +164,7 @@ display: none;
     padding: 25px 60px;
     border: none;
     border-radius: 15px;
+    margin-top: 30px;
 }
 
 /* footer-area-style */
@@ -202,6 +203,9 @@ footer hr {
 }
 .footer__hidden{
     visibility: hidden;
+}
+.footer__hidden a{
+    color: lightgray;
 }
 
 
